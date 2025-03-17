@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- googlefont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <!-- ========= -->
+
+</head>
+  <!-- Todo
+
+   Add dynamic number 
+   items left
+
+  All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list -->
+<body>
+<div class="parent darkmode">
+  <div class="topside" id="topimg">
+  </div>
+  <div class="todocontanier d-flex flex-column gap-4 p-3">
+    <div class="todotitle d-flex justify-content-between align-items-center w-100">
+      <h1 class="text-white m-0 p-0">T O D O</h1>
+      <button class="bg-transparent border-0" id="sunbtn">
+        <img src="images/icon-sun.svg" alt="" id="sunimg">
+      </button>
+    </div>
+    <div class="">
+      <div class="mb-3 d-flex justify-content-between align-items-center gap-2">
+        <label class="containers">
+          <input checked="checked" type="checkbox">
+          <div class="checkmark"></div>
+        </label>
+        <input type="text" class="form-control p-3 border-0" id="todobtn" placeholder="Create a new todo...">
+        <div class="d-flex justify-content-end">
+          <button class="menu__icon" id="addbtn">
+          </button>
+        </div>
+      </div>
+      <div>
+        <!-- From Uiverse.io by ArturCodeCraft --> 
+      </div>
+    </div>    
+    <div class="todolist darkmode d-flex justify-content-center align-items-center px-2 flex-column gap-2" id="todolistpage">
+     
+    </div>
+  </div>
+</div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
