@@ -26,12 +26,32 @@ body{
     color: var(--VeryDarkGrayishBlue);
     transition: 1s !important;
 }
+.deletebtn {
+  margin-left: auto; /* Pushes button to the right */
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.deletebtn img {
+  width: 16px;
+  height: 16px;
+  filter: invert(50%); /* Makes the icon visible in both dark/light modes */
+}
+
+/* Hover effect for delete button */
+.deletebtn:hover {
+  opacity: 0.8;
+}
 .parent{
     min-height: 100vh;
     position: relative;
 }
 .topside{
     height: 30vh ;
+    justify-content: end;
+    align-items: end;
 }
 .darkbackground{
   width: 100%;
